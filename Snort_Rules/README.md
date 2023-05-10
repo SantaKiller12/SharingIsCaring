@@ -27,6 +27,9 @@ base64 -d snort_scriptB64.txt | tr -d '\r' > snort_script.sh && chmod +x snort_s
 ```
 
 4. Verify contents of `rules.txt`, copy the contents and paste them into `/etc/nsm/rules/local.rules`
+```bash
+sudo snort -T -c rules.txt
+```
 
 5. Update rules
 
