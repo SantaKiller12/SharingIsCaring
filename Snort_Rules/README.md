@@ -25,3 +25,45 @@ base64 -d snort_scriptB64.txt | tr -d '\r' > snort_script.sh && chmod +x snort_s
 ```bash
 ./snort_script.sh >> rules.txt
 ```
+
+4. Verify contents of `rules.txt`, copy the contents and paste them into `/etc/nsm/rules/local.rules`
+
+5. Update rules
+
+```bash 
+sudo rule-update
+```
+
+6. Update rules on sensor
+
+```bash
+sudo rule-update
+```
+
+7. Replay contents on sensor
+
+```bash
+sudo tcpreplay -i eth1 --topspeed /path/to/your/file.pcap
+```
+
+## Other useful commands
+
+### Check status
+```
+sudo sostat
+```
+
+### Check firewall on server (Note: Not 100% sure this helps anything...)
+
+1. List firewall rules. If blocked, it should list it toward the top of the output
+```
+sudo iptables -L -n | less
+```
+
+2. Delete rules blocking IP
+```
+sudo iptables -D INPUT -s 10.10.10.7 -j DROP
+```
+```
+sudo iptables -D FORWARD -s 10.10.10.7 -j DROP
+```
