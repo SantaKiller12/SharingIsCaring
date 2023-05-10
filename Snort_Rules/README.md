@@ -4,9 +4,9 @@
 
 This tool will create a list of snort rules using iocdomains.txt and iocips.txt files. Files available are as follows:
 
-- base64PS.ps1 : This file is a basic script to base64 encode a given file
-- snort_script.sh : This is the decoded version of the script that will create the snort rules
-- snort_scriptB64.txt : The base64 encoded version of the script
+- `base64PS.ps1` : This file is a basic script to base64 encode a given file
+- `snort_script.sh` : This is the decoded version of the script that will create the snort rules
+- `snort_scriptB64.txt` : The base64 encoded version of the script
 
 ## Setup
 
