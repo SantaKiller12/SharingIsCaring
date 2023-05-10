@@ -26,9 +26,13 @@ base64 -d snort_scriptB64.txt | tr -d '\r' > snort_script.sh && chmod +x snort_s
 ./snort_script.sh >> rules.txt
 ```
 
-4. Verify contents of `rules.txt`, copy the contents and paste them into `/etc/nsm/rules/local.rules`
+4. Verify contents of `rules.txt`, and replace with new rules `/etc/nsm/rules/local.rules`
 ```bash
 sudo snort -T -c rules.txt
+```
+
+```bash
+sudo mv rules.txt /etc/nsm/rules/local.rules
 ```
 
 5. Update rules
@@ -43,7 +47,13 @@ sudo rule-update
 sudo rule-update
 ```
 
-7. Replay contents on sensor
+7. Edit `/etc/nsm/so-sensor-eth1/snort.conf`
+Change the following: 
+```
+config checksum_mode: none
+```
+
+8. Replay contents on sensor
 
 ```bash
 sudo tcpreplay -i eth1 --topspeed /path/to/your/file.pcap
