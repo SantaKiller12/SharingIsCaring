@@ -20,14 +20,8 @@ Note: Make sure the `iocdomains.txt` and `iocips.txt` file are in the same locat
 base64 -d snort_scriptB64.txt | tr -d '\r' > snort_script.sh && chmod +x snort_script.sh
 ```
 
-3. Execute the script and output the files to a chosen directory
+3. Execute the script and output the files to a chosen file
 
 ```bash
-./snort_script.sh >> /etc/nsm/rules/local.rules
-```
-
-4. Update rules
-
-```bash
-sudo rule-update
+./snort_script.sh >> rules.txt
 ```
