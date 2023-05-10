@@ -80,3 +80,8 @@ sudo iptables -D INPUT -s 10.10.10.7 -j DROP
 ```
 sudo iptables -D FORWARD -s 10.10.10.7 -j DROP
 ```
+
+### Grep contents of PCAP
+```
+sudo tcpdump -r filename.pcap -nnvvXS | grep -nof fileIOCs
+```
