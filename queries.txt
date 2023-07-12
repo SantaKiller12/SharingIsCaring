@@ -1,0 +1,4 @@
+cve_id
+executive_summary
+exploitation_consequence
+observed_in_the_wild
