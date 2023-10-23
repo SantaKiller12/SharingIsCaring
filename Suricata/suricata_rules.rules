@@ -1,0 +1,5 @@
+alert dns any any -> any any (msg:"APT666: Malicious FQDN detected"; dns.query; content:"google.com"; sid:1000000; rev:1;)
+alert ip 123.123.123.123 any -> any any (msg:"APT123: Malicious source IP detected"; sid:1000001; rev:1;)
+alert ip any any -> 123.123.123.123 any (msg:"APT123: Malicious destination IP detected"; sid:1000002; rev:1;)
+alert http any any -> any any (msg:": FILE MD5 match for malicious file"; filemd5:ef4ab22e565684424b4142b129000000; sid:1000003; rev:1;)
+alert http any any -> any any (msg:": Malicious URL detected"; http.uri; content:"google.com/test/this/site"; sid:1000004; rev:1;)
