@@ -1,3 +1,448 @@
 {
-    "vulnerabilities": []
+    "vulnerabilities": [
+        {
+            "affects_ot": false,
+            "aliases": [],
+            "analysis": "<p>An attacker could exploit this vulnerability to execute arbitrary code. An attacker would need to create a specially crafted web page and cause a user to open it on a vulnerable system.<br /><br />Mandiant Intelligence considers this a Medium-risk vulnerability because of the potential for remote code execution offset by the user interaction required for exploitation.</p>",
+            "associated_actors": [],
+            "associated_malware": [],
+            "associated_reports": [
+                {
+                    "audience": [
+                        "vulnerability"
+                    ],
+                    "published_date": "2023-06-02T14:32:57.737Z",
+                    "report_id": "23-00000756",
+                    "report_type": "Vulnerability Report",
+                    "title": "Google Chrome 108.0.5359.125 Network Service Heap-Based Buffer Overflow Vulnerability"
+                }
+            ],
+            "audience": [
+                "intel_vuln"
+            ],
+            "available_mitigation": [
+                "Patch"
+            ],
+            "cisa_known_exploited": null,
+            "common_vulnerability_scores": {
+                "v2.0": {
+                    "access_complexity": "MEDIUM",
+                    "access_vector": "NETWORK",
+                    "authentication": "NONE",
+                    "availability_impact": "COMPLETE",
+                    "base_score": 9.3,
+                    "confidentiality_impact": "COMPLETE",
+                    "exploitability": "UNPROVEN",
+                    "integrity_impact": "COMPLETE",
+                    "remediation_level": "OFFICIAL_FIX",
+                    "report_confidence": "CONFIRMED",
+                    "temporal_score": 6.9,
+                    "vector_string": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C"
+                },
+                "v3.1": {
+                    "attack_complexity": "LOW",
+                    "attack_vector": "NETWORK",
+                    "availability_impact": "HIGH",
+                    "base_score": 8.8,
+                    "confidentiality_impact": "HIGH",
+                    "exploit_code_maturity": "UNPROVEN",
+                    "integrity_impact": "HIGH",
+                    "privileges_required": "NONE",
+                    "remediation_level": "NOT_DEFINED",
+                    "report_confidence": "CONFIRMED",
+                    "scope": "UNCHANGED",
+                    "temporal_score": 8.8,
+                    "user_interaction": "REQUIRED",
+                    "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+            },
+            "cpe_ranges": [
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Debian Linux (OS)",
+                        "uri": "cpe:2.3:o:debian:debian_linux:11.0:*:*:*:*:*:*:*",
+                        "vendor": "Debian Project",
+                        "version": "11.0"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Debian Linux (OS)",
+                        "uri": "cpe:2.3:o:debian:debian_linux:11:*:*:*:*:*:*:*",
+                        "vendor": "Debian Project",
+                        "version": "11"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Debian Linux (OS)",
+                        "uri": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                        "vendor": "Debian Project",
+                        "version": "10.0"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Freebsd (OS)",
+                        "uri": "cpe:2.3:o:freebsd:freebsd:13.0:*:*:*:*:*:*:*",
+                        "vendor": "FreeBSD Project",
+                        "version": "13.0"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Freebsd (OS)",
+                        "uri": "cpe:2.3:o:freebsd:freebsd:12.3:*:*:*:*:*:*:*",
+                        "vendor": "FreeBSD Project",
+                        "version": "12.3"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Freebsd (OS)",
+                        "uri": "cpe:2.3:o:freebsd:freebsd:12.2:*:*:*:*:*:*:*",
+                        "vendor": "FreeBSD Project",
+                        "version": "12.2"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": {
+                        "product": "Chrome (Application)",
+                        "uri": "cpe:2.3:a:google:chrome:109.0.5414.74:*:*:*:*:*:*:*",
+                        "vendor": "Google LLC",
+                        "version": "109.0.5414.74"
+                    },
+                    "end_rel": "<",
+                    "start_cpe": null,
+                    "start_rel": null
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Chrome (Application)",
+                        "uri": "cpe:2.3:a:google:chrome:108.0.5359.98:*:*:*:*:*:*:*",
+                        "vendor": "Google LLC",
+                        "version": "108.0.5359.98"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Chrome (Application)",
+                        "uri": "cpe:2.3:a:google:chrome:108.0.5359.125:*:*:*:*:*:*:*",
+                        "vendor": "Google LLC",
+                        "version": "108.0.5359.125"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Chrome (Application)",
+                        "uri": "cpe:2.3:a:google:chrome:108.0.5359.124:*:*:*:*:*:*:*",
+                        "vendor": "Google LLC",
+                        "version": "108.0.5359.124"
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Microsoft Edge",
+                        "uri": "cpe:2.3:a:microsoft:edge:-:*:*:*:*:*:*:*",
+                        "vendor": "Microsoft Corp."
+                    },
+                    "start_rel": "="
+                },
+                {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Backports",
+                        "uri": "cpe:2.3:a:opensuse:backports:*:*:*:*:*:suse_linux_enterprise_15_sp4:*:*",
+                        "vendor": "openSUSE Project",
+                        "version": "All Versions for Suselinuxenterprise15Sp4"
+                    },
+                    "start_rel": "="
+                }
+            ],
+            "cve_id": "CVE-2023-0129",
+            "cwe": "Heap-based Buffer Overflow",
+            "cwe_details": {
+                "id": "CWE-122",
+                "title": "Heap-based Buffer Overflow"
+            },
+            "date_of_disclosure": "2023-01-10T00:00:00.000Z",
+            "days_to_patch": 0,
+            "description": "<p>National Vulnerability Database has provided the following description: <br /><em>Heap buffer overflow in Network Service in Google Chrome prior to 109.0.5414.74 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page and specific interactions. (Chromium security severity: High)</em></p>",
+            "epss": {
+                "percentile": 0.22998,
+                "score": 0.00059
+            },
+            "executive_summary": "<p>A heap-based buffer overflow vulnerability exists within the Network Service in Google Chrome 108.0.5359.125 and earlier that, when exploited, allows a remote attacker to execute arbitrary code. Exploit code is not publicly available. Mitigation options include a vendor fix.</p>",
+            "exploitation_consequence": "Code Execution",
+            "exploitation_state": "No Known",
+            "exploitation_vectors": [
+                "General Network Connectivity",
+                "Web"
+            ],
+            "exploits": [],
+            "first_publish_date": "2023-01-11T22:16:15.000Z",
+            "id": "vulnerability--961a0feb-cf7b-507c-9945-b3015ffbb151",
+            "intel_free": false,
+            "is_predicted": false,
+            "is_publishable": true,
+            "last_modified_date": "2023-07-27T17:51:06.344Z",
+            "mve_id": "MVE-2023-202",
+            "observed_in_the_wild": false,
+            "publish_date": "2023-06-02T12:36:21.000Z",
+            "risk_rating": "MEDIUM",
+            "sources": [
+                {
+                    "date": "2023-01-12T17:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_name": "Microsoft Corp.",
+                    "title": "Chromium:CVE-2023-0129: Heap buffer overflow in Network Service\r\n",
+                    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-0129"
+                },
+                {
+                    "date": "2023-01-10T20:15:10.000Z",
+                    "is_vendor_fix": false,
+                    "source_name": "National Vulnerability Database",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-0129"
+                },
+                {
+                    "date": "2023-01-17T12:00:00.000Z",
+                    "is_vendor_fix": false,
+                    "source_name": "Red Hat Inc.",
+                    "title": "2161536",
+                    "unique_id": "2161536",
+                    "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2161536"
+                },
+                {
+                    "date": "2023-01-17T17:00:00.000Z",
+                    "is_vendor_fix": false,
+                    "source_name": "Red Hat Inc.",
+                    "title": "2161550",
+                    "unique_id": "2161550",
+                    "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2161550"
+                },
+                {
+                    "date": "2023-01-13T17:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_description": "Debian Security Advisory",
+                    "source_name": "Debian Project",
+                    "title": "DSA-5317-1",
+                    "unique_id": "DSA-5317-1",
+                    "url": "https://www.debian.org/security/2023/dsa-5317"
+                },
+                {
+                    "date": "2023-01-13T12:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_name": "openSUSE Project",
+                    "title": "openSUSE-SU-2023:0016-1",
+                    "unique_id": "openSUSE-SU-2023:0016-1",
+                    "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/2PZLKYPQOBOYUPBN4TZGMVMENMO3USHV"
+                },
+                {
+                    "date": "2023-01-10T17:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_name": "FreeBSD Project",
+                    "title": "7b929503-911d-11ed-a925-3065ec8fd3ec",
+                    "unique_id": "7b929503-911d-11ed-a925-3065ec8fd3ec",
+                    "url": "https://vuxml.freebsd.org/freebsd/7b929503-911d-11ed-a925-3065ec8fd3ec.html"
+                },
+                {
+                    "date": "2023-01-10T17:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_name": "Google LLC",
+                    "title": "Stable Channel Update for Desktop",
+                    "url": "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+                },
+                {
+                    "is_vendor_fix": false,
+                    "url": "https://crbug.com/1382033"
+                },
+                {
+                    "is_vendor_fix": false,
+                    "url": "https://security.gentoo.org/glsa/202305-10"
+                }
+            ],
+            "title": "Google Chrome 108.0.5359.125 Network Service Heap-Based Buffer Overflow Vulnerability",
+            "type": "vulnerability",
+            "updated_date": "2023-06-02T12:36:21.000Z",
+            "vendor_fix_references": [
+                {
+                    "name": "Microsoft Corp.",
+                    "published_date": "2023-01-12T17:00:00Z",
+                    "unique_id": "",
+                    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-0129"
+                },
+                {
+                    "name": "Debian Project",
+                    "published_date": "2023-01-13T17:00:00Z",
+                    "unique_id": "DSA-5317-1",
+                    "url": "https://www.debian.org/security/2023/dsa-5317"
+                },
+                {
+                    "name": "openSUSE Project",
+                    "published_date": "2023-01-13T12:00:00Z",
+                    "unique_id": "openSUSE-SU-2023:0016-1",
+                    "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/2PZLKYPQOBOYUPBN4TZGMVMENMO3USHV"
+                },
+                {
+                    "name": "FreeBSD Project",
+                    "published_date": "2023-01-10T17:00:00Z",
+                    "unique_id": "7b929503-911d-11ed-a925-3065ec8fd3ec",
+                    "url": "https://vuxml.freebsd.org/freebsd/7b929503-911d-11ed-a925-3065ec8fd3ec.html"
+                },
+                {
+                    "name": "Google LLC",
+                    "published_date": "2023-01-10T17:00:00Z",
+                    "unique_id": "",
+                    "url": "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
+                }
+            ],
+            "version_history": [
+                {
+                    "date": "2023-01-13T00:00:00.000Z",
+                    "version_notes": [
+                        "Added Microsoft Edge vendor fix information"
+                    ]
+                },
+                {
+                    "date": "2023-01-14T00:00:00.000Z",
+                    "version_notes": [
+                        "Added the following vendor fixes: FreeBSD (7b929503-911d-11ed-a925-3065ec8fd3ec), openSUSE Backports SLE-15-SP4 (openSUSE-SU-2023:0016-1); Added the following vulnerable products: openSUSE Backports SLE-15-SP4, FreeBSD 12.2, FreeBSD 13.0, FreeBSD 12.3"
+                    ]
+                },
+                {
+                    "date": "2023-01-17T00:00:00.000Z",
+                    "version_notes": [
+                        "Added the following vulnerable products: Debian 10, Debian 11; Added the following vendor fixes: Debian (DSA-5317-1); Added the following sources: Red Hat (2161536), Red Hat (2161550)"
+                    ]
+                },
+                {
+                    "date": "2023-03-22T21:39:37.000Z",
+                    "version_notes": [
+                        "New source added: (https://crbug.com/1382033)",
+                        "New source added: (National Vulnerability Database)"
+                    ]
+                },
+                {
+                    "date": "2023-05-03T12:45:27.000Z",
+                    "version_notes": [
+                        "New source added: (https://security.gentoo.org/glsa/202305-10)"
+                    ]
+                },
+                {
+                    "date": "2023-05-03T13:51:39.000Z",
+                    "version_notes": [
+                        "risk_factors: Added"
+                    ]
+                },
+                {
+                    "date": "2023-06-02T12:39:56.000Z",
+                    "version_notes": [
+                        "cpes: Updated"
+                    ]
+                }
+            ],
+            "vulnerable_cpes": [
+                {
+                    "cpe": "cpe:2.3:o:debian:debian_linux:11.0:*:*:*:*:*:*:*",
+                    "cpe_title": "Debian Project Debian Linux (OS) 11.0",
+                    "technology_name": "Debian Linux (OS)",
+                    "vendor_name": "Debian Project"
+                },
+                {
+                    "cpe": "cpe:2.3:o:debian:debian_linux:11:*:*:*:*:*:*:*",
+                    "cpe_title": "Debian Project Debian Linux (OS) 11",
+                    "technology_name": "Debian Linux (OS)",
+                    "vendor_name": "Debian Project"
+                },
+                {
+                    "cpe": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                    "cpe_title": "Debian Project Debian Linux (OS) 10.0",
+                    "technology_name": "Debian Linux (OS)",
+                    "vendor_name": "Debian Project"
+                },
+                {
+                    "cpe": "cpe:2.3:o:freebsd:freebsd:13.0:*:*:*:*:*:*:*",
+                    "cpe_title": "FreeBSD Project Freebsd (OS) 13.0",
+                    "technology_name": "Freebsd (OS)",
+                    "vendor_name": "FreeBSD Project"
+                },
+                {
+                    "cpe": "cpe:2.3:o:freebsd:freebsd:12.3:*:*:*:*:*:*:*",
+                    "cpe_title": "FreeBSD Project Freebsd (OS) 12.3",
+                    "technology_name": "Freebsd (OS)",
+                    "vendor_name": "FreeBSD Project"
+                },
+                {
+                    "cpe": "cpe:2.3:o:freebsd:freebsd:12.2:*:*:*:*:*:*:*",
+                    "cpe_title": "FreeBSD Project Freebsd (OS) 12.2",
+                    "technology_name": "Freebsd (OS)",
+                    "vendor_name": "FreeBSD Project"
+                },
+                {
+                    "cpe": "cpe:2.3:a:google:chrome:108.0.5359.98:*:*:*:*:*:*:*",
+                    "cpe_title": "Google LLC Chrome (Application) 108.0.5359.98",
+                    "technology_name": "Chrome (Application)",
+                    "vendor_name": "Google LLC"
+                },
+                {
+                    "cpe": "cpe:2.3:a:google:chrome:108.0.5359.125:*:*:*:*:*:*:*",
+                    "cpe_title": "Google LLC Chrome (Application) 108.0.5359.125",
+                    "technology_name": "Chrome (Application)",
+                    "vendor_name": "Google LLC"
+                },
+                {
+                    "cpe": "cpe:2.3:a:google:chrome:108.0.5359.124:*:*:*:*:*:*:*",
+                    "cpe_title": "Google LLC Chrome (Application) 108.0.5359.124",
+                    "technology_name": "Chrome (Application)",
+                    "vendor_name": "Google LLC"
+                },
+                {
+                    "cpe": "cpe:2.3:a:microsoft:edge:-:*:*:*:*:*:*:*",
+                    "cpe_title": "Microsoft Corp. Microsoft Edge ",
+                    "technology_name": "Microsoft Edge",
+                    "vendor_name": "Microsoft Corp."
+                },
+                {
+                    "cpe": "cpe:2.3:a:opensuse:backports:*:*:*:*:*:suse_linux_enterprise_15_sp4:*:*",
+                    "cpe_title": "openSUSE Project Backports All Versions for Suselinuxenterprise15Sp4",
+                    "technology_name": "Backports",
+                    "vendor_name": "openSUSE Project"
+                }
+            ],
+            "vulnerable_products": "<p>The following vendors/products have been reported as vulnerable:<br /><ul><li>Debian Project: Debian Linux (OS) 10.0, 11, 11.0</li><br /><li>FreeBSD Project: Freebsd (OS) 12.2, 12.3, 13.0</li><br /><li>Google LLC: Chrome (Application) 108.0.5359.98, 108.0.5359.124, 108.0.5359.125, prior to 109.0.5414.74</li><br /><li>Microsoft Corp.: Microsoft Edge </li><br /><li>openSUSE Project: Backports All Versions for Suselinuxenterprise15Sp4</li><br /></ul></p>",
+            "was_zero_day": false,
+            "workarounds": null,
+            "workarounds_list": []
+        }
+    ]
 }

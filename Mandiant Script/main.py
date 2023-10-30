@@ -3,6 +3,7 @@ import requests
 import json
 import os
 import csv
+import chardet
 from datetime import datetime, timedelta
 
 def get_bearer_token(api_key, api_secret):
@@ -62,8 +63,16 @@ def get_indicator_data(bearer_token):
         "Content-Type": "application/json"
     }
 
+    # Detect encoding type
+    def detect_file_encoding(file_path):
+        with open(file_path, 'rb') as f:
+            result = chardet.detect(f.read())
+            return result['encoding']
+
+    encoding = detect_file_encoding('CVE.txt')
+
     # Load the CVEs from the file
-    with open('CVE.txt', 'r') as f:
+    with open('CVE.txt', 'r', encoding=encoding) as f:
         cves = [line.strip() for line in f]
 
     for cve in cves:
@@ -78,6 +87,7 @@ def get_indicator_data(bearer_token):
         params = None
         
         while True:
+            print(post_body)
             resp = requests.post(url=url, headers=headers, data=json.dumps(post_body))
             if resp.status_code != 429:
                 # If the status is not 429, break the loop
