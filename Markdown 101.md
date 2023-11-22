@@ -1,12 +1,12 @@
 # Introduction
 
-> So, you landed on this GitHub page, huh? Odds are you sent me some type of document – probably something technical. And let's be frank, it probably resembled a hot mess. Hell, I might've straight up ignored it because my eyes hurt just glancing at it. 
-> 
-> Don’t cry into your cereal just yet. I was once like you. Diving into Google Docs, slapping together words, and smugly hitting that send button thinking I was the Shakespeare of tech docs. Spoiler alert: I wasn’t.
-> 
-> You made a boo-boo, champ. But guess what? Here's your chance to level up. Markdown is about to be your new best friend. Let's get you sorted.*
+So, you landed on this GitHub page, huh? Odds are you sent me some type of document – probably something technical. And let's be frank, it probably resembled a hot mess. Hell, I might've straight up ignored it because my eyes hurt just glancing at it. 
+ 
+Don’t cry into your cereal just yet. I was once like you. Diving into Google Docs, slapping together words, and smugly hitting that send button thinking I was the Shakespeare of tech docs. Spoiler alert: I wasn’t.
+ 
+You made a boo-boo, champ. But guess what? Here's your chance to level up. Markdown is about to be your new best friend. Let's get you sorted.*
 
-Already know what the hell you're doing? [[#FOR REAL?!|Skip!]]
+Already know what the hell you're doing? [Skip](#for-real)
 
 ---
 ## What is Markdown?
@@ -43,9 +43,9 @@ Damn, you're still hanging around? Kudos to you, kid. Want a gold star? How 'bou
 
 Well here's a little table of contents for the rest of this stuff because I'm gunna jump all over. 
 
-- [Markdown Cheat Sheet](#Markdown%20Cheat%20Sheet)
-- [HTML Cheat Sheet](#HTML%20Cheat%20Sheet)
-- [Backups](#Backups)
+- [Markdown Cheat Sheet](#markdown-cheat-sheet)
+- [HTML Cheat Sheet](#html-cheat-sheet)
+- [Backups](#backups)
 
 ---
 ### Markdown Cheat Sheet
