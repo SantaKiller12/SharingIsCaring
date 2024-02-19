@@ -11,7 +11,7 @@
                     "audience": [
                         "vulnerability"
                     ],
-                    "published_date": "2023-06-02T14:32:57.737Z",
+                    "published_date": "2023-11-25T14:22:44.781Z",
                     "report_id": "23-00000756",
                     "report_type": "Vulnerability Report",
                     "title": "Google Chrome 108.0.5359.125 Network Service Heap-Based Buffer Overflow Vulnerability"
@@ -124,6 +124,16 @@
                     "start_rel": "="
                 },
                 {
+                    "end_cpe": null,
+                    "end_rel": null,
+                    "start_cpe": {
+                        "product": "Linux (OS)",
+                        "uri": "cpe:2.3:o:gentoo:linux:-:*:*:*:*:*:*:*",
+                        "vendor": "Gentoo Foundation Inc."
+                    },
+                    "start_rel": "="
+                },
+                {
                     "end_cpe": {
                         "product": "Chrome (Application)",
                         "uri": "cpe:2.3:a:google:chrome:109.0.5414.74:*:*:*:*:*:*:*",
@@ -199,10 +209,10 @@
             "days_to_patch": 0,
             "description": "<p>National Vulnerability Database has provided the following description: <br /><em>Heap buffer overflow in Network Service in Google Chrome prior to 109.0.5414.74 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page and specific interactions. (Chromium security severity: High)</em></p>",
             "epss": {
-                "percentile": 0.22998,
-                "score": 0.00059
+                "percentile": 0.43816,
+                "score": 0.00109
             },
-            "executive_summary": "<p>A heap-based buffer overflow vulnerability exists within the Network Service in Google Chrome 108.0.5359.125 and earlier that, when exploited, allows a remote attacker to execute arbitrary code. Exploit code is not publicly available. Mitigation options include a vendor fix.</p>",
+            "executive_summary": "<ul><li>A Heap-based Buffer Overflow vulnerability exists that, when exploited, allows a remote attacker to execute arbitrary code.</li><li>We are currently unaware of exploitation activity in the wild, and exploit code is not publicly available.</li><li>Mandiant Intelligence considers this a Medium-risk vulnerability due to the potential for arbitrary code execution, offset by user interaction requirements.</li><li>Mitigation options include a patch.</li></ul>",
             "exploitation_consequence": "Code Execution",
             "exploitation_state": "No Known",
             "exploitation_vectors": [
@@ -215,10 +225,10 @@
             "intel_free": false,
             "is_predicted": false,
             "is_publishable": true,
-            "last_modified_date": "2023-07-27T17:51:06.344Z",
+            "last_modified_date": "2024-01-22T18:44:19.575Z",
             "mve_id": "MVE-2023-202",
             "observed_in_the_wild": false,
-            "publish_date": "2023-06-02T12:36:21.000Z",
+            "publish_date": "2024-01-22T18:36:45.000Z",
             "risk_rating": "MEDIUM",
             "sources": [
                 {
@@ -268,6 +278,22 @@
                     "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/2PZLKYPQOBOYUPBN4TZGMVMENMO3USHV"
                 },
                 {
+                    "date": "2023-05-03T00:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_name": "Gentoo Foundation Inc.",
+                    "title": "Chromium, Google Chrome, Microsoft Edge: Multiple Vulnerabilities (GLSA 202305-10) \u2014 Gentoo security",
+                    "unique_id": "GLSA 202305-10",
+                    "url": "https://security.gentoo.org/glsa/202305-10"
+                },
+                {
+                    "date": "2023-11-25T00:00:00.000Z",
+                    "is_vendor_fix": true,
+                    "source_name": "Gentoo Foundation Inc.",
+                    "title": "QtWebEngine: Multiple Vulnerabilities (GLSA 202311-11) \u2014 Gentoo security",
+                    "unique_id": "GLSA 202311-11",
+                    "url": "https://security.gentoo.org/glsa/202311-11"
+                },
+                {
                     "date": "2023-01-10T17:00:00.000Z",
                     "is_vendor_fix": true,
                     "source_name": "FreeBSD Project",
@@ -285,15 +311,11 @@
                 {
                     "is_vendor_fix": false,
                     "url": "https://crbug.com/1382033"
-                },
-                {
-                    "is_vendor_fix": false,
-                    "url": "https://security.gentoo.org/glsa/202305-10"
                 }
             ],
             "title": "Google Chrome 108.0.5359.125 Network Service Heap-Based Buffer Overflow Vulnerability",
             "type": "vulnerability",
-            "updated_date": "2023-06-02T12:36:21.000Z",
+            "updated_date": "2024-01-22T18:36:45.000Z",
             "vendor_fix_references": [
                 {
                     "name": "Microsoft Corp.",
@@ -312,6 +334,18 @@
                     "published_date": "2023-01-13T12:00:00Z",
                     "unique_id": "openSUSE-SU-2023:0016-1",
                     "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/2PZLKYPQOBOYUPBN4TZGMVMENMO3USHV"
+                },
+                {
+                    "name": "Gentoo Foundation Inc.",
+                    "published_date": "2023-05-03T00:00:00Z",
+                    "unique_id": "GLSA 202305-10",
+                    "url": "https://security.gentoo.org/glsa/202305-10"
+                },
+                {
+                    "name": "Gentoo Foundation Inc.",
+                    "published_date": "2023-11-25T00:00:00Z",
+                    "unique_id": "GLSA 202311-11",
+                    "url": "https://security.gentoo.org/glsa/202311-11"
                 },
                 {
                     "name": "FreeBSD Project",
@@ -348,14 +382,13 @@
                 {
                     "date": "2023-03-22T21:39:37.000Z",
                     "version_notes": [
-                        "New source added: (https://crbug.com/1382033)",
-                        "New source added: (National Vulnerability Database)"
+                        "sources: Added https://crbug.com/1382033"
                     ]
                 },
                 {
                     "date": "2023-05-03T12:45:27.000Z",
                     "version_notes": [
-                        "New source added: (https://security.gentoo.org/glsa/202305-10)"
+                        "sources: Added https://nvd.nist.gov/vuln/detail/CVE-2023-0129"
                     ]
                 },
                 {
@@ -365,9 +398,15 @@
                     ]
                 },
                 {
-                    "date": "2023-06-02T12:39:56.000Z",
+                    "date": "2023-11-25T12:45:07.000Z",
                     "version_notes": [
-                        "cpes: Updated"
+                        "sources: Added https://security.gentoo.org/glsa/202311-11"
+                    ]
+                },
+                {
+                    "date": "2024-01-22T14:17:37.000Z",
+                    "version_notes": [
+                        "sources: Added https://security.gentoo.org/glsa/202305-10"
                     ]
                 }
             ],
@@ -409,6 +448,12 @@
                     "vendor_name": "FreeBSD Project"
                 },
                 {
+                    "cpe": "cpe:2.3:o:gentoo:linux:-:*:*:*:*:*:*:*",
+                    "cpe_title": "Gentoo Foundation Inc. Linux (OS) ",
+                    "technology_name": "Linux (OS)",
+                    "vendor_name": "Gentoo Foundation Inc."
+                },
+                {
                     "cpe": "cpe:2.3:a:google:chrome:108.0.5359.98:*:*:*:*:*:*:*",
                     "cpe_title": "Google LLC Chrome (Application) 108.0.5359.98",
                     "technology_name": "Chrome (Application)",
@@ -439,7 +484,7 @@
                     "vendor_name": "openSUSE Project"
                 }
             ],
-            "vulnerable_products": "<p>The following vendors/products have been reported as vulnerable:<br /><ul><li>Debian Project: Debian Linux (OS) 10.0, 11, 11.0</li><br /><li>FreeBSD Project: Freebsd (OS) 12.2, 12.3, 13.0</li><br /><li>Google LLC: Chrome (Application) 108.0.5359.98, 108.0.5359.124, 108.0.5359.125, prior to 109.0.5414.74</li><br /><li>Microsoft Corp.: Microsoft Edge </li><br /><li>openSUSE Project: Backports All Versions for Suselinuxenterprise15Sp4</li><br /></ul></p>",
+            "vulnerable_products": "<p>The following vendors/products have been reported as vulnerable:<br /><ul><li>Debian Project: Debian Linux (OS) 10.0, 11, 11.0</li><br /><li>FreeBSD Project: Freebsd (OS) 12.2, 12.3, 13.0</li><br /><li>Gentoo Foundation Inc.: Linux (OS) </li><br /><li>Google LLC: Chrome (Application) 108.0.5359.98, 108.0.5359.124, 108.0.5359.125, prior to 109.0.5414.74</li><br /><li>Microsoft Corp.: Microsoft Edge </li><br /><li>openSUSE Project: Backports All Versions for Suselinuxenterprise15Sp4</li><br /></ul></p>",
             "was_zero_day": false,
             "workarounds": null,
             "workarounds_list": []
