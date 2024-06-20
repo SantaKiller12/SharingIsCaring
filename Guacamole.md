@@ -43,10 +43,10 @@ guacd-port:     4822
 user-mapping:   /etc/guacamole/user-mapping.xml
 auth-provider:  net.sourceforge.guacamole.net.basic.BasicFileAuthenticationProvider
 ```
-7. Create the `/etc/guacamole/user-mapping.xml` file. The password is `nobody allowed in`
+7. Create the `/etc/guacamole/user-mapping.xml` file. Add in the password hash
 ```xml
 <user-mapping>
-    <authorize username="elevationstudnt" password="c38efcb120f9b2dd295bb8e38799e595" encoding="md5">
+    <authorize username="elevationstudnt" password="<insert hash>" encoding="md5">
         <connection name="UbuDesktop">
             <protocol>vnc</protocol>
             <param name="hostname">10.182.0.2</param>
